@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jai Art Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  
+  <!-- HEADER / NAV -->
+  <header>
+    <div class="logo">Jai Art</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+         <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="socials">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+    </div>
+  </header>
+
+  <!-- HOME SECTION -->
+  <section id="home" class="home">
+    <video autoplay muted loop id="bg-video"controls>
+      <source src="gallery/background.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="home-content">
+      <h1>Welcome to Jai’s Art World</h1>
+      <p>Where creativity meets imagination</p>
+      <a href="#gallery" class="btn">Explore Gallery</a>
+      <a href="#about" class="btn btn-outline">About</a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h1>About Me</h1>
+    <div class="about-content">
+      <div class="about-image">
+        <img src="gallery/pp.jpg" alt="Artist Profile Picture" />
+      </div>
+      <div class="about-text">
+        <p>
+         <br><b>HELLO I'M JAI!</b></br>
+          <br>
+          Welcome to <b>Artistic Visions Gallery</b>, where creativity meets passion. 
+          I explore various mediums to share emotions, stories, and visions. 
+          Each piece reflects my journey of self-expression and imagination.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <main>
+    <h1 class="gallery-title">Art Gallery</h1>
+    <section id="gallery" class="gallery">
+    <div class="gallery-item"><img src="gallery/1.jpeg" alt="Image 1"></div>
+      <div class="gallery-item"><img src="gallery/2.jpeg" alt="Image 2"></div>
+      <div class="gallery-item"><img src="gallery/3.jpeg" alt="Image 3"></div>
+      <div class="gallery-item"><img src="gallery/4.jpeg" alt="Image 4"></div>
+      <div class="gallery-item"><img src="gallery/5.jpeg" alt="Image 5"></div>
+      <div class="gallery-item"><img src="gallery/6.jpeg" alt="Image 6"></div>
+      <div class="gallery-item"><img src="gallery/7.jpeg" alt="Image 7"></div>
+      <div class="gallery-item"><img src="gallery/8.jpeg" alt="Image 8"></div>
+      <div class="gallery-item"><img src="gallery/9.jpeg" alt="Image 9"></div>
+    </section>
+  </main>
+
+  <!--Project Section-->
+  <section id="projects">
+    <h1>My Projects</h1>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="gallery/dreamscape-wall-art.jpg" alt="Project 1">
+        <h2>Dreamscape Series</h2>
+        <p>A surreal collection inspired by dreams and the subconscious mind.<br>I used charcoal and digital
+        techniques to blend reality with imagination, creating a sense of mystery and wonder in each artwork.</p>
+      </div>
+       <div class="project-card">
+        <img src="gallery/golden.webp" alt="Project 2">
+        <h2>Golden Reflection</h2>
+        <p>This project explores the play of light and using gold leaf and acrylics.<br>Each piece reflects
+        inner emotions , reminding viewers that even in the darkness, there is always a spark of brilliance.</p>
+      </div>
+       <div class="project-card">
+        <img src="gallery/humanity.jpg" alt="Project 3">
+        <h2>Faces of Humanity</h2>
+        <p>A portrait series capturing raw human emotions.<br>From joy to sorrow, every stroke is a story of resiliance,
+        love and idenetity. This work aims tp connect deeply with viewers on personal level.</p>
+      </div>
+
+    <!--Contact -->
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 JaiArtGallery | Designed with ❤️</p>
+  </footer>
+</body>
+</html>
