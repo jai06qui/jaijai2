@@ -200,38 +200,47 @@ main {
 /* Project Section */
 #project {
   background: #121212;
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
   text-align: center;
 }
 
 #project h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-size: 2.5rem;
   color: gold;
-  text-align: center;
 }
 
-.project-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* exactly 3 columns */
-  gap: 2rem;
-  max-width: 1100px;
-  margin: 15px;
-}
 
 .project-card {
   background: #1e1e1e;
   border-radius: 12px;
-  padding: 20px;
+  padding: 25px;
   box-shadow: 0 0 15px rgba(128, 0, 128, 0.3);
   transition: transform 0.3s;
-  text-align: left; /* optional: aligns text nicely under image */
+}
+.project-card h2 {
+  margin: 15px 0;
+  color:white;
+}
+.project-card p{
+  margin-bottom: 15px;
+  color: #ccc;
+  line-height: 1.6;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
 }
-
+.view-project {
+  display: inline-block;
+  color: gold;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: background 0.3s;
+}
+.view-project:hover {
+  color: purple;
+}
 .project-card img {
   width: 150px;
   height: 150px;
@@ -240,18 +249,8 @@ main {
   margin-bottom: 15px;
   margin: 30px;
   box-shadow: 0 0 10px rgba(128, 0, 128, 0.5);
+}
 
-}
-.project-card h2 {
-  margin-bottom: 10px;
-  color: purple;
-}
-.project-card p {
-  color: #ccc;
-  line-height: 1.6;
-  font-size: 0.95rem;
-  text-align: left;
-}
 
 /* CONTACT SECTION */
 #contact {
@@ -314,4 +313,5 @@ footer {
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(50px); }
   to { opacity: 1; transform: translateY(0); }
+
 }
